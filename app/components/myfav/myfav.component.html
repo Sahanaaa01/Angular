@@ -1,0 +1,8 @@
+
+<ul class="item-group" *ngFor="let x of myhobby; let i=index">
+    <li class="item-group-list" *ngIf="x.fav==1" >
+        {{x.name}}
+        <button class="btn btn-info" (click)="rmvfav(i)" >Remove from Favourites </button>
+    </li>
+    
+</ul>

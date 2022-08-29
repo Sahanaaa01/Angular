@@ -1,0 +1,22 @@
+<body>
+    
+<div *ngIf="msg =='hobby'">
+    <app-hobby [myhobby]="hobbylist"(rhobby)="delhobby($event)" (addf)="addtofav($event)"></app-hobby>
+</div>
+<div *ngIf="msg =='addhobby'">
+    <app-addhobby (mynewhobby)="addnewhobby($event)"></app-addhobby>
+</div>
+
+
+<div *ngIf="msg=='fav'">
+    <app-myfav [myhobby]="myfav" (rmfav)="remvfav($event)" ></app-myfav>
+</div> 
+
+<!--<p>
+   Phone Number= {{no|phoneFormat}}
+
+</p>
+
+<input appPhdir type="text" [(ngModel)]="no">-->
+
+</body>

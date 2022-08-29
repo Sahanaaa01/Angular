@@ -1,0 +1,14 @@
+<label for ="newhobby">New Hobby </label>
+    <input [appMydir]  #hobby [value]="myhobby" type="text" class="form-control" id="newhobby" (keyup.enter)="addhobby(hobby.value)"/>
+
+    <p>
+        Phone Number= {{no|phoneFormat}}
+     
+     </p>
+     
+     <input appPhdir type="text" [(ngModel)]="no">
+     
+
+    <!--<label for ="newhobby"> Description </label>
+    <input #hobby [value]="myhobby" type="text" class="form-control" id="newhobby" (keyup.enter)="addhobby(hobby.value)"/>
+    -->
